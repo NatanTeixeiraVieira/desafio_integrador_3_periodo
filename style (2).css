@@ -68,3 +68,9 @@ select:focus {
     color: white;
     background-color: #0008f7;
 }
+
+.campos{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
