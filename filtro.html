@@ -1,103 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: relative;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutLdg1QFCCHUciQbFUvvP9-cEyPd6JCZJ4A&s');
+        color: #fff;
+        padding: 1.25em 0;
+      }
 
-  <style>
+      header .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-    body{
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      position: relative;
-      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutLdg1QFCCHUciQbFUvvP9-cEyPd6JCZJ4A&s');
-      color: #fff;
-      padding: 1.25em 0;
-    }
+      header h1 {
+        margin: 0;
+        font-size: 1.5em;
+      }
 
-    header .container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+      ul {
+        list-style: none;
+      }
 
-    header h1 {
-      margin: 0;
-      font-size: 1.5em;
-    }
+      .pesquisa-filtro {
+        display: flex;
+        align-items: center;
+      }
 
-    ul {
-      list-style: none;
-    }
+      .pesquisa-filtro input[type='text'] {
+        padding: 0.625em;
+        margin-right: 0.625em;
+        border: none;
+        border-radius: 0.3125em;
+      }
 
+      .pesquisa-filtro select {
+        padding: 0.625em;
+        border: none;
+        border-radius: 0.3125em;
+        background-color: #fff;
+      }
 
-    .pesquisa-filtro {
-      display: flex;
-      align-items: center;
-    }
+      #btn-pesquisar {
+        margin-right: 0.3125em;
+        padding: 0.625em 1.25em;
+        font-size: 1em;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 0.3125em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
 
-    .pesquisa-filtro input[type="text"] {
-      padding: 0.625em;
-      margin-right: 0.625em;
-      border: none;
-      border-radius: 0.3125em;
-    }
+      #btn-pesquisar:hover {
+        background-color: #218838;
+      }
+    </style>
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
 
-    .pesquisa-filtro select {
-      padding: 0.625em;
-      border: none;
-      border-radius: 0.3125em;
-      background-color: #fff;
-    }
+  <body>
+    <header>
+      <div class="container">
+        <h1>Biblioteca Virtual</h1>
+        <div class="pesquisa-filtro">
+          <ul>
+            <li>
+              <input type="text" id="pesquisar" placeholder="Pesquisar..." />
+            </li>
+            <li id="resultado"></li>
+          </ul>
 
-    #btn-pesquisar {
-      margin-right: 0.3125em;
-      padding: 0.625em 1.25em;
-      font-size: 1em;
-      background-color: #28a745;
-      color: #fff;
-      border: none;
-      border-radius: 0.3125em;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    #btn-pesquisar:hover {
-      background-color: #218838;
-    }
-  </style>
-  <script src="index.js"></script>
-  <title>Document</title>
-</head>
-
-<body>
-
-  <header>
-    <div class="container">
-      <h1>Biblioteca Virtual</h1>
-      <div class="pesquisa-filtro">
-
-        <ul>
-          <li>
-            <input type="text" id="pesquisar" placeholder="Pesquisar...">
-          </li>
-          <li id="resultado"></li>
-        </ul>
-        
-        <button id="btn-pesquisar" onclick="Filtra()">Pesquisar</button>
-        <select id="filtro">
-          <option value="todos">Todos</option>
-          <option value="ficcao">Ficção</option>
-          <option value="Comédia">Comédia</option>
-          <option value="romance">Romance</option>
-        </select>
+          <button id="btn-pesquisar" onclick="Filtra()">Pesquisar</button>
+          <select id="filtro">
+            <option value="todos">Todos</option>
+            <option value="ficcao">Ficção</option>
+            <option value="Comédia">Comédia</option>
+            <option value="romance">Romance</option>
+          </select>
+        </div>
       </div>
-    </div>
-  </header>
-
-</body>
-
+    </header>
+  </body>
 </html>
