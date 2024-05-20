@@ -60,14 +60,6 @@ select:focus {
     text-decoration: none;
 }
 
-.btn{
-    width: 6em;
-    height: 2.5em;
-    border: none;
-    border-radius: 0.4em;
-    color: white;
-    background-color: #0008f7;
-}
 
 .campos{
   display: flex;
