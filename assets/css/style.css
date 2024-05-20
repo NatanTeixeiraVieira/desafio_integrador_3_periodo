@@ -62,7 +62,7 @@ header h1 {
     background-color: #218838;
 }
  
-.btn-login {
+.btn-acessar {
     padding: 0.625em 1.25em;
     background-color: #dc3545;
     color: #fff;
@@ -75,19 +75,8 @@ header h1 {
 
 }
 
-.btn-cadastro {
-    padding: 0.625em 1.25em;
-    background-color: #dc3545;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.3125em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.btn-login:hover,
-.btn-cadastro:hover {
+.btn-acessar:hover {
     background-color: #c82333;
     text-decoration: none;
 }
