@@ -67,6 +67,25 @@ ul {
     background-color: #218838;
 }
 
+.back-link {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    z-index: 1000; 
+}
+
+.back-link:hover {
+    background-color: #45a049; 
+}
+
 .suggestions {
     display: none;
     position: absolute;
@@ -499,3 +518,4 @@ section a:hover {
 .pagination a.next {
     font-weight: bold;
 }
+ 
