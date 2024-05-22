@@ -2,48 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style (2).css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style (2).css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
 
   <title>Teste de zoom</title>
 </head>
+<header>
+  <div class="container">
+      <h1>Biblioteca Virtual</h1>
+  </div>
+  <nav class="zoom-controls">
+      <ul>
+          <li><button onclick="Mais()">Aumentar Zoom</button></li>
+          <li> <button onclick="Menos()" type="button">Diminuir Zoom</button></li>
+          <select id="filtro">
+              <option value="todos">Tema Claro</option>
+              <option value="ficcao">Tema Escuto</option>
+              <option value="Comédia">Tema monocromático</option>
+              <option value="romance">Tema dicromático</option>
+              <option value="romance">Tema tri-cromático</option>
+
+          </select>
+      </ul>
+  </nav>
+</header>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>Biblioteca Virtual</h1>
-      <div class="pesquisa-filtro">
-        <input type="text" id="pesquisar" placeholder="Pesquisar...">
-        <button id="btn-pesquisar">Pesquisar</button>
-        <select id="filtro">
-          <option value="todos">Todos</option>
-          <option value="ficcao">Ficção</option>
-          <option value="Comédia">Comédia</option>
-          <option value="romance">Romance</option>
-        </select>
-      </div>
 
-      <div>
-        <a href="/Login.html" class="btn-acessar">Login</a>
-        <a href="/Cadastro.html" class="btn-acessar">Cadastro</a>
-        <a href="/AdicionarLivro.html" class="btn-acessar">Adicionar Livros</a>
-      </div>
-    </div>
-    <nav class="zoom-controls">
-      <ul>
-        <li><button onclick="Mais()">Aumentar Zoom</button></li>
-        <li> <button onclick="Menos()" type="button">Diminuir Zoom</button></li>
-        <select id="filtro" onchange="trocarTema(this.value)">
-          <option value="">Tema Claro</option>
-          <option value="escuro">Tema Escuto</option>
-          <option value="monocromatico">Tema monocromático</option>
-          <option value="dicromatico">Tema dicromático</option>
-          <option value="tricromatico">Tema tri-cromático</option>
-        </select>
-      </ul>
-  </header>
   <section id="acess">
     <div class="content">
       <h1>Login</h1>
@@ -52,16 +39,14 @@
 
       <input type="password" placeholder="Senha:" />
 
-      <a class="btn-acessar" href="index.html">Logar</a>
+      <a class="btn" href="index.html">Logar</a>
 
       <a href="/Cadastro.html">Não possui cadastro? cadastre-se agora </a>
+
     </div>
   </section>
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Biblioteca Virtual. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+
+
 </body>
 <script src="index.js"></script>
 
