@@ -1,3 +1,5 @@
+/* Início */
+
 .monocromatico header button,
 .monocromatico header select {
   background-color: #fff;
@@ -29,4 +31,39 @@
 
 .monocromatico .welcome-section a {
   background-color: #000;
+}
+
+/* Cadastro */
+.monocromatico #acess {
+  background: #fff;
+}
+
+.monocromatico .content {
+  border-color: #000;
+}
+
+.monocromatico .content a {
+  background-color: #000;
+}
+
+/* Index */
+.monocromatico .ler-livro {
+  background-color: #000;
+}
+
+.monocromatico .btn-acessar,
+.monocromatico .back-link {
+  background-color: #fff;
+  color: #000;
+}
+
+.monocromatico .pagination a,
+.monocromatico .page {
+  background-color: #000;
+  color: #fff;
+}
+
+.monocromatico .btn-adicionar {
+  background-color: #000;
+  color: #fff;
 }

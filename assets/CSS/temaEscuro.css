@@ -1,3 +1,4 @@
+/* Inicio */
 .escuro body,
 .escuro section {
   background-color: #031525;
@@ -17,5 +18,25 @@
 }
 
 .escuro .close:hover {
+  color: #99aac4;
+}
+
+/*  Cadastro */
+
+.escuro #acess {
+  background: #031525;
+}
+
+.escuro .content {
+  border-color: #99aac4;
+}
+
+/* Index */
+
+body.escuro {
+  background-color: #031525;
+}
+
+.escuro .pagination a {
   color: #99aac4;
 }

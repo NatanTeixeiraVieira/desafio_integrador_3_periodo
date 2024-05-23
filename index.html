@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="assets/CSS/temaDicromatico.css">
     <link rel="stylesheet" href="assets/CSS/temaEscuro.css">
     <link rel="stylesheet" href="assets/CSS/temaMonocromatico.css">
+    <link rel="stylesheet" href="assets/CSS/temaTricromatico.css">
     <link rel="shortcut icon" href="assets/imagens/favicon-16x16.png" type="image/x-icon">
     <title>livros</title>
 </head>
 
 <body>
 
-    <header>
+    <header  >
         <div class="container">
             <h1>Biblioteca Virtual</h1>
             <div class="pesquisa-filtro">
@@ -29,12 +30,13 @@
                     </div>
                 </ul>
                 <button id="btn-pesquisar" onclick="Filtra()">Pesquisar</button>
-                <select id="filtro">
-                    <option value="todos">Todos</option>
-                    <option value="ficcao">Ficção</option>
-                    <option value="comedia">Comédia</option>
-                    <option value="romance">Romance</option>
-                </select>
+                <select id="filtro" onchange="trocarTema(this.value)">
+                    <option value="">Tema Claro</option>
+                    <option value="escuro">Tema Escuto</option>
+                    <option value="monocromatico">Tema monocromático</option>
+                    <option value="dicromatico">Tema dicromático</option>
+                    <option value="tricromatico">Tema tri-cromático</option>
+                  </select>
                 
             </div>
             
@@ -59,7 +61,7 @@
     </header>
     <a href="inicio.html" class="back-link">Voltar</a>
 
-    <div class="container">
+    <div class="container" >
         <div class="books-grid">
             <div class="book">
                 <img src="assets/imagens/Banana 1/1.jpg" alt="Diário de um Banana 1">
@@ -152,6 +154,7 @@
     </footer>
 
     <script src="assets/JavaScript/script.js"></script>
+    <script src="assets/JavaScript/trocaTemas.js"></script>
 
 </body>
 

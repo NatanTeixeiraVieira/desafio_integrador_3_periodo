@@ -1,0 +1,69 @@
+/* Início */
+
+.dicromatico button,
+.dicromatico select {
+  background-color: #777da7;
+  color: #efefef;
+}
+
+.dicromatico button:hover,
+.dicromatico select:hover {
+  background-color: #777da7;
+  color: #efefef;
+}
+
+.dicromatico #btn-pesquisar {
+  background-color: #777da7;
+  color: #efefef;
+}
+
+.dicromatico main button,
+.dicromatico main h2:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #777da7;
+  color: #efefef;
+}
+
+.dicromatico main button:hover,
+.dicromatico main h2:hover:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #777da7;
+  color: #efefef;
+}
+
+/* Cadastro */
+
+.dicromatico .welcome-section a {
+  background-color: #777da7;
+}
+
+.dicromatico #acess {
+  background: #777da7;
+}
+
+.dicromatico .content {
+  border-color: #efefef;
+}
+
+/* Login */
+
+/* Index */
+.dicromatico .ler-livro {
+  background-color: #777da7;
+}
+
+.dicromatico .btn-acessar {
+  background-color: #777da7;
+  color: #efefef;
+}
+
+.dicromatico .pagination a,
+.dicromatico .page,
+.dicromatico .back-link {
+  background-color: #777da7;
+}
+
+.dicromatico .btn-adicionar,
+.dicromatico .btn,
+.dicromatico .btn:hover {
+  background-color: #cccccc;
+  color: #222;
+}

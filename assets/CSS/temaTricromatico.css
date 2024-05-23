@@ -1,0 +1,78 @@
+.tricromatico button,
+.tricromatico select {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.tricromatico button:hover,
+.tricromatico select:hover {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.tricromatico #btn-pesquisar {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.tricromatico main button,
+.tricromatico main h2:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.tricromatico main button:hover,
+.tricromatico main h2:hover:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.tricromatico .welcome-section a {
+  background-color: #777da7;
+}
+
+/* Cadastro */
+
+.tricromatico .welcome-section a {
+  background-color: #777da7;
+}
+
+.tricromatico #acess {
+  background: #777da7;
+}
+
+.tricromatico .content {
+  border-color: #fff;
+}
+
+/* Login */
+
+.tricromatico .btn {
+  background-color: #222;
+}
+
+.tricromatico .btn:hover {
+  background-color: #222;
+}
+
+/* Index */
+.tricromatico .ler-livro {
+  background-color: #777da7;
+}
+
+.tricromatico .btn-acessar,
+.tricromatico .back-link {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.tricromatico .pagination a,
+.tricromatico .page {
+  background-color: #777da7;
+}
+
+.tricromatico .btn-adicionar,
+.dicromatico .btn:hover {
+  background-color: #cccccc;
+  color: #222;
+}
