@@ -395,14 +395,12 @@ section a:hover {
 }
 
 .welcome-section {
-    background-image: url('https://img.freepik.com/fotos-premium/mundo-de-fantasia-dentro-do-livro-conceito-de-educacao-imaginacao-e-criatividade-da-leitura-de-livros_999147-7679.jpg');
-    background-size: cover;
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/2510994-seamless-background-pattern-flat-design-concept-books-vector-illustrate-gratis-vetor.jpg');
+    background-repeat: repeat;
     background-position: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 100px 0;
-    height: 10em;
-    width: 100%;
 }
 
 .welcome-section .container {
