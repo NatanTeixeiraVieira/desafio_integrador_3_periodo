@@ -21,6 +21,11 @@
   color: #99aac4;
 }
 
+.escuro #modal-title,
+.escuro #modal-summary {
+  color: #99aac4;
+}
+
 /*  Cadastro */
 
 .escuro #acess {
