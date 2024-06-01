@@ -329,3 +329,62 @@ function trocarTema(tema) {
     document.body.classList.add(tema);
   }
 }
+
+// Teclas para movimentação nas páginas da Biblioteca -------------------------------------------------------------------------
+
+document.addEventListener('keydown', function(event) {
+  switch (event.key) {
+  case 'ArrowUp':
+
+      document.querySelector('[tabindex="' + (document.activeElement.tabIndex - 1) + '"]').focus();
+      break;
+  case 'ArrowDown':
+
+      document.querySelector('[tabindex="' + (document.activeElement.tabIndex + 1) + '"]').focus();
+      break;
+  case 'ArrowLeft':
+
+      document.querySelector('[tabindex="' + (document.activeElement.tabIndex - 1) + '"][aria-posinset="' + document.activeElement.getAttribute('aria-posinset') + '"]').focus();
+      break;
+  case 'ArrowRight':
+
+      document.querySelector('[tabindex="' + (document.activeElement.tabIndex + 1) + '"][aria-posinset="' + document.activeElement.getAttribute('aria-posinset') + '"]').focus();
+      break;
+  }
+});
+
+  document.addEventListener('keydown', function(event) {
+    const sections = document.querySelectorAll('section');
+    let currentIndex = document.activeElement.tabIndex - 1;
+
+    switch(event.key) {
+        case 'ArrowUp':
+        case 'w':
+        case 'W':
+            if (currentIndex > 0) {
+                sections[currentIndex - 1].focus();
+            }
+            break;
+        case 'ArrowDown':
+        case 's':
+        case 'S':
+            if (currentIndex < sections.length - 1) {
+                sections[currentIndex + 1].focus();
+            }
+            break;
+        case 'ArrowLeft':
+        case 'a':
+        case 'A':
+            if (currentIndex > 0) {
+                sections[currentIndex - 1].focus();
+            }
+            break;
+        case 'ArrowRight':
+        case 'd':
+        case 'D':
+            if (currentIndex < sections.length - 1) {
+                sections[currentIndex + 1].focus();
+            }
+            break;
+    }
+  });
