@@ -142,43 +142,64 @@ ul {
 }
 .zoom-controls {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .zoom-controls ul {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .zoom-controls li {
-    margin: 0 5px; 
+    margin: 5px;
 }
 
 .zoom-controls button,
-.zoom-controls select {
-    padding: 0.625em 1.25em;
+.zoom-controls select,
+.zoom-controls .btn-acessar {
+    padding: 10px 20px;
     font-size: 1em;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 0.3125em;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none; 
+    display: block; 
 }
 
 .zoom-controls button:hover,
-.zoom-controls select:hover {
+.zoom-controls select:hover,
+.zoom-controls .btn-acessar:hover {
     background-color: #0056b3;
 }
+@media (max-width: 768px) {
+    .zoom-controls ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.zoom-controls select {
-    background-color: #007bff; 
-    margin-left: 5px; 
+    .zoom-controls li {
+        margin: 10px 0;
+    }
 }
 
-/* conteudos paginas inicial, e livros */
+@media (max-width: 480px) {
+    .zoom-controls button,
+    .zoom-controls select,
+    .zoom-controls .btn-acessar {
+        font-size: 0.875em;
+        padding: 8px 16px;
+    }
+}
+
 
 
 .container {
@@ -292,7 +313,7 @@ footer p {
         padding: 1em 0;
     }
 
-    header .container {
+    header .container  {
         flex-direction: column;
         align-items: center;
     }
@@ -327,10 +348,6 @@ footer p {
         margin-right: 5px;
     }
 }
-
-
-/* tela inicio */
-
 
 section {
     padding: 50px;
@@ -434,7 +451,6 @@ section a:hover {
     justify-content: center;
 }
 
-/* tela leitura */
 .main {
     padding: 20px;
 }

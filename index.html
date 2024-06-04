@@ -15,14 +15,14 @@
 
 <body>
 
-    <header  >
+    <header>
         <div class="container">
             <h1>Biblioteca Virtual</h1>
             <div class="pesquisa-filtro">
                 <ul>
                     <li>
                         <input type="text" id="pesquisar" placeholder="Pesquisar..." onkeyup="mostrarResultados()">
-                        
+
                     </li>
                     <li id="resultado"></li>
                     <div id="suggestions" class="suggestions">
@@ -36,10 +36,10 @@
                     <option value="monocromatico">Tema monocromático</option>
                     <option value="dicromatico">Tema dicromático</option>
                     <option value="tricromatico">Tema tri-cromático</option>
-                  </select>
-                
+                </select>
+
             </div>
-            
+
         </div>
         <nav class="zoom-controls">
             <ul>
@@ -57,11 +57,11 @@
                 <ul>
                     <li> <a href="AdicionarLivro.html" class="btn-acessar">Adicionar Livros</a></li>
                 </ul>
-            </nav>
+        </nav>
     </header>
     <a href="inicio.html" class="back-link">Voltar</a>
 
-    <div class="container" >
+    <div class="container">
         <div class="books-grid">
             <div class="book">
                 <img src="assets/imagens/Banana 1/1.jpg" alt="Diário de um Banana 1">
@@ -128,11 +128,12 @@
             </div>
         </div>
         <div class="pagination">
-            <a href="#" class="prev"><<</a>
-            <a href="#" class="page">1</a>
-            <a href="#" class="page">2</a>
-            <a href="#" class="page">3</a>
-            <a href="#" class="next">>></a>
+            <a href="#" class="prev">
+                <<< /a>
+                    <a href="#" class="page">1</a>
+                    <a href="#" class="page">2</a>
+                    <a href="#" class="page">3</a>
+                    <a href="#" class="next">>></a>
         </div>
     </div>
 
@@ -158,13 +159,13 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 </body>
 
 </html>
