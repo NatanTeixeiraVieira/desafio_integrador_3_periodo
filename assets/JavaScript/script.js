@@ -388,3 +388,20 @@ document.addEventListener('keydown', function(event) {
             break;
     }
   });
+  
+  document.addEventListener("keydown", function(event) {
+    if (event.altKey) {
+      switch (event.key) {
+        case "1":
+          window.scrollTo(0, 0); // Ir para o topo da página
+          break;
+        case "2":
+          window.scrollTo(0, document.body.offsetHeight / 2); // Ir para a metade da página
+          break;
+        case "3":
+          window.scrollTo(0, document.body.offsetHeight); // Ir para o final da página
+          break;
+        // Adicione mais casos para outras teclas
+      }
+    }
+  });
